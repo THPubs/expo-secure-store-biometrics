@@ -25,6 +25,15 @@ export default function HomeScreen() {
           },
         );
       }}></Button>
+
+
+      <Button title={'Delete Secure Data'} onPress={() => {
+        console.log('Storing Data Securely...');
+
+        SecureStore.deleteItemAsync(
+          'session',
+        );
+      }}></Button>
     </ParallaxScrollView>
   );
 }
